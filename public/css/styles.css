@@ -1,0 +1,208 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    transition: background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #8C24E6;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #8C24E6;
+    transition: width 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #8C24E6;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background: url('ebenBaNNER.png') no-repeat center center/cover;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #8C24E6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #6e1bcf;
+    transform: translateY(-5px);
+}
+
+.section {
+    padding: 50px 0;
+    transition: padding 0.3s ease-in-out;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #8C24E6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.section p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.product:hover h3 {
+    color: #8C24E6;
+}
+
+.product p {
+    font-size: 18px;
+    color: #8C24E6;
+    transition: color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
