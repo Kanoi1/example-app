@@ -17,7 +17,6 @@
         <div class="container">
             <h2>Sobre Nosotros</h2>
             <p>En Eben Ezer, nos dedicamos a ofrecer ropa de alta calidad con un diseño exclusivo y elegante. Nuestra misión es proporcionar una experiencia de compra única y satisfactoria.</p>
-            <p>Hola</p>
     </section>
 
     <section id="shop" class="section">
